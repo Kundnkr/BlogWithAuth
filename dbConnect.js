@@ -1,5 +1,5 @@
 let mongoose  = require('mongoose');
-let url = "mongodb+srv://127.0.0.1/management";
+let url = "mongodb://localhost:27017/?directConnection=true";
 
 
 
