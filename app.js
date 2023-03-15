@@ -71,8 +71,8 @@ app.post('/addBlog', async (req, res) => {
             title:datas[i].title
         })
     }
-    res.render('blog',{data:details})
     details = [];
+    res.render('blog',{data:details})
     
 });
 
