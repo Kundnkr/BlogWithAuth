@@ -1,5 +1,6 @@
 let mongoose  = require('mongoose');
-let url = "mongodb+srv://kundan:123@newcluster.gefneye.mongodb.net/management";
+
+let url = process.env.HOST;
 
 
 

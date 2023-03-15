@@ -1,4 +1,5 @@
 let mongoose  = require('mongoose');
+let dotenv = require('dotenv');
 let dbConnect = require('./dbConnect');
 dbConnect(); 
 

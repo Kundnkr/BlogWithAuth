@@ -2,10 +2,7 @@ let mongoose = require('mongoose');
 let express = require('express');
 let ejs = require('ejs');
 let app = express();
-let dotenv = require('dotenv');
-dotenv.config({
-    path:"./data/config.env",
-})
+require('dotenv').config()
 let path = require('path');
 const fileUpload = require('express-fileupload');
 let currentPath = path.join(__dirname, 'views');
@@ -118,7 +115,7 @@ app.post('/login', async (req, res) => {
 })
 
 //server port
-const port = process.env.PORT;
+const port = process.env.PORT||3000;
 app.listen(port, () => {
     console.log(`server is runnig at port ${port}`);
 });
