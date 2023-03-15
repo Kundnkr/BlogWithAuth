@@ -1,5 +1,5 @@
 let mongoose  = require('mongoose');
-let url = "mongodb://127.0.0.1:27017/management";
+let url = "mongodb+srv://kundan:123@newcluster.gefneye.mongodb.net/management";
 
 
 
